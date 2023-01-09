@@ -1,0 +1,36 @@
+:root {
+    --main-color: #85586F;
+    --second-color: #D0B8A8;
+    --third-color: #DFD3C3;
+    --fourth-color: #F8EDE3;
+}
+
+body {
+    width: 100vh;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template: 1fr 6fr / 1fr 3fr 1fr;
+}
+
+.sidebar-container {
+    grid-area: 1 / 1 / 3 / 2;
+    background-color: var(--main-color);
+}
+
+.topbar-container {
+    grid-area: 1 / 2 / 2 / 4;
+}
+
+.project-container {
+    grid-area: 2 / 2 / 3 / 3;
+    background-color: var(--second-color);
+}
+
+.rightbar-container {
+    grid-area: 2 / 3 / 3 / 4;
+}
