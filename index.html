@@ -7,7 +7,9 @@
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="style.css">
     <script src="javascript.js" refer></script>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     
@@ -16,53 +18,53 @@
     <div class="sidebar-container">
 
         <div class="header">
-            <div class="logo">Header Logo</div>
+            <img src="./images/bulletin-board.svg" class="logo" width="75px">
             <div class="header-text">Dashboard</div>
         </div>
 
         <div class="sidebar-one">
             
-            <div class="home-side">
-                <div class="home-image">Home Image</div>
-                <div class="home-text">Home</div>
-            </div>
-            <div class="profile-side">
-                <div class="profile-image">Profile Image</div>
+            <a class="sidebar-card" href="https://google.com">
+                <img src="./images/home-variant-outline.svg" class="sidebar-image" width="30px">
+                <div class="home-text" href="https://google.com">Home</div>
+            </a>
+            <a class="sidebar-card" href="https://google.com">
+                <img src="./images/face-man-profile.svg" class="sidebar-image" width="30px">
                 <div class="profile-text">Profile</div>
-            </div>
-            <div class="messages-side">
-                <div class="messages-image">Messages Image</div>
+            </a>
+            <a class="sidebar-card" href="https://google.com">
+                <img src="./images/message-outline.svg" class="sidebar-image" width="30px">
                 <div class="messages-text">Messages</div>
-            </div>
-            <div class="history-side">
-                <div class="history-image">History Iamge</div>
+            </a>
+            <a class="sidebar-card" href="https://google.com">
+                <img src="./images/history.svg" class="sidebar-image" width="30px">
                 <div class="history-text">History</div>
-            </div>
-            <div class="tasks-side">
-                <div class="tasks-image">Tasks Image</div>
+            </a>
+            <a class="sidebar-card" href="https://google.com">
+                <img src="./images/calendar-check-outline.svg" class="sidebar-image" width="30px">
                 <div class="tasks-text">Tasks</div>
-            </div>
-            <div class="communities-side">
-                <div class="communities-image">Communities Image</div>
+            </a>
+            <a class="sidebar-card" href="https://google.com">
+                <img src="./images/account-group-outline.svg" class="sidebar-image" width="30px">
                 <div class="communities-text">Communities</div>
-            </div>
+            </a>
 
         </div>
 
         <div class="sidebar-two">
             
-            <div class="settings-side">
-                <div class="settings-image">Settings Image</div>
+            <a class="sidebar-card" href="https://google.com">
+                <img src="./images/cog-outline.svg" class="sidebar-image" width="30px">
                 <div class="settings-text">Settings</div>
-            </div>
-            <div class="support-side">
-                <div class="support-image">Support Image</div>
+            </a>
+            <a class="sidebar-card" href="https://google.com">
+                <img src="./images/lifebuoy.svg" class="sidebar-image" width="30px">
                 <div class="support-text">Support</div>
-            </div>
-            <div class="privacy-side">
-                <div class="privacy-image">Privacy Image</div>
+            </a>
+            <a class="sidebar-card" href="https://google.com">
+                <img src="./images/shield-check-outline.svg" class="sidebar-image" width="30px">
                 <div class="privacy-text">Privacy</div>
-            </div>
+            </a>
         </div>
 
     </div>
@@ -70,26 +72,26 @@
     <div class="topbar-container">
 
         <div class="search-bar">
-            <div class="search-logo">Search Logo</div>
-            <input type="text" placeholder="Search...">
+            <img src="images/magnify.svg" class="search-logo" width="30px"></img>
+            <input type="text">
         </div>
 
         <div class="top-right-buttons">
-            <div>Notifications</div>
-            <div>User</div>
-            <div>Your Name</div>
+            <a href="https://google.com"><img src="./images/bell.svg" width="50px"></a>
+            <a href="https://google.com"><img src="./images/KOALA 3.png" width="50px"></a>
+            <a href="https://google.com"><div>Cody Plummer</div></a>
         </div>
 
         <div class="user-greeting">
-            <div class="user-image">User Image</div>
-            <h3>Hi. there</h3>
-            <h1>Cody Plummer</h1>
+            <img src="./images/KOALA 3.png" width="100px" class="user-image">
+            <h3>Hi, there</h3>
+            <h1>Cody Plummer (@code)</h1>
         </div>
 
         <div class="user-buttons">
-            <div>New Button</div>
-            <div>Share Button</div>
-            <div>Upload Button</div>
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
         </div>
     </div>
 
@@ -99,60 +101,60 @@
 
         <div class="projects">
             
-            <div class="card">
-                <div>Super Cool Project</div>
-                <div>lots and lots of text here that doesn't mean anything in particular</div>
+            <div class="card" id="card-one" onmouseover="highlight()">
+                <h3>Super Cool Project</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices lorem tellus, ac feugiat velit dignissim in.</p>
                 <div class="project-buttons">
-                    <div>Star Button</div>
-                    <div>Eye Button</div>
-                    <div>Share Button</div>
+                    <a href="https://google.com"><img src="./images/magnify.svg" width="30px"></a>
+                    <a href="https://google.com"><img src="./images/eye-plus-outline.svg" width="30px"></a>
+                    <a href="https://google.com"><img src="./images/share-variant-outline.svg" width="30px"></a>
                 </div>
             </div>
 
             <div class="card">
-                <div>Less Cool Project</div>
-                <div>lots and lots of text here that doesn't mean anything in particular</div>
+                <h3>Less Cool Project</h3>
+                <p>Proin in rhoncus velit. Donec tempus ornare mauris quis lobortis. Etiam ut urna tempor, vulputate risus et, ultricies purus. Nunc nec pellentesque diam.</p>
                 <div class="project-buttons">
-                    <div>Star Button</div>
-                    <div>Eye Button</div>
-                    <div>Share Button</div>
+                    <a href="https://google.com"><img src="./images/magnify.svg" width="30px"></a>
+                    <a href="https://google.com"><img src="./images/eye-plus-outline.svg" width="30px"></a>
+                    <a href="https://google.com"><img src="./images/share-variant-outline.svg" width="30px"></a>
                 </div>
             </div>
             <div class="card">
-                <div>Impossible App</div>
-                <div>lots and lots of text here that doesn't mean anything in particular</div>
+                <h3>Impossible App</h3>
+                <p>Proin placerat lorem eu varius auctor. Proin lacinia bibendum posuere. Quisque sagittis cursus lacus non faucibus. Sed risus purus, bibendum quis sapien in, consequat placerat felis.</p>
                 <div class="project-buttons">
-                    <div>Star Button</div>
-                    <div>Eye Button</div>
-                    <div>Share Button</div>
+                    <a href="https://google.com"><img src="./images/magnify.svg" width="30px"></a>
+                    <a href="https://google.com"><img src="./images/eye-plus-outline.svg" width="30px"></a>
+                    <a href="https://google.com"><img src="./images/share-variant-outline.svg" width="30px"></a>
                 </div>
             </div>
             <div class="card">
-                <div>Easy Peasy App</div>
-                <div>lots and lots of text here that doesn't mean anything in particular</div>
+                <h3>Easy Peasy App</h3>
+                <p>Nunc vitae feugiat diam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus semper gravida ipsum id luctus.</p>
                 <div class="project-buttons">
-                    <div>Star Button</div>
-                    <div>Eye Button</div>
-                    <div>Share Button</div>
+                    <a href="https://google.com"><img src="./images/magnify.svg" width="30px"></a>
+                    <a href="https://google.com"><img src="./images/eye-plus-outline.svg" width="30px"></a>
+                    <a href="https://google.com"><img src="./images/share-variant-outline.svg" width="30px"></a>
                 </div>
             </div>
             <div class="card">
-                <div>Ad Blocker</div>
-                <div>lots and lots of text here that doesn't mean anything in particular</div>
+                <h3>Ad Blocker</h3>
+                <p>Aliquam erat volutpat. Curabitur tempor suscipit ante ac scelerisque. Donec sit amet nisl vel nisi hendrerit cursus. Proin posuere ultrices magna hendrerit ultrices. </p>
                 <div class="project-buttons">
-                    <div>Star Button</div>
-                    <div>Eye Button</div>
-                    <div>Share Button</div>
+                    <a href="https://google.com"><img src="./images/magnify.svg" width="30px"></a>
+                    <a href="https://google.com"><img src="./images/eye-plus-outline.svg" width="30px"></a>
+                    <a href="https://google.com"><img src="./images/share-variant-outline.svg" width="30px"></a>
                 </div>
             </div>
 
             <div class="card">
-                <div>Money Maker</div>
-                <div>lots and lots of text here that doesn't mean anything in particular</div>
+                <h3>Money Maker</h3>
+                <p>Maecenas bibendum congue dignissim. Integer purus mi, dapibus sed commodo ac, porta id quam. Maecenas urna velit, condimentum in volutpat sed, pharetra sed est.</p>
                 <div class="project-buttons">
-                    <div>Star Button</div>
-                    <div>Eye Button</div>
-                    <div>Share Button</div>
+                    <a href="https://google.com"><img src="./images/magnify.svg" width="30px"></a>
+                    <a href="https://google.com"><img src="./images/eye-plus-outline.svg" width="30px"></a>
+                    <a href="https://google.com"><img src="./images/share-variant-outline.svg" width="30px"></a>
                 </div>
             </div>
 
@@ -163,14 +165,40 @@
 
         <div class="announcements-text">Announcements</div>
 
-        <div class="announcements-card">
-            <div></div>
+        <div class="card">
+            <h3>Site Maintenance</h3>
+            <p>Some more text here about the title that is above this paragraph text right here that your reading.</p>
+            <hr>
+            <h3>Community</h3>
+            <p>Some more text here about the title that is above this paragraph text right here that your reading.</p>
+            <hr>
+            <h3>Updated Privacy</h3>
+            <p>Some more text here about the title that is above this paragraph text right here that your reading.</p>
         </div>
 
         <div class="trending-text">Trending</div>
 
-        <div class="trending-card">
-            <div></div>
+        <div class="card">
+            <div class="trending-block">
+                <img src="./images/KOALA 3.png" width="40px">
+                <h4>@code</h4>
+                <p>World Peace Builder</p>
+            </div>
+            <div class="trending-block">
+                <img src="./images/KOALA 3.png" width="35px">
+                <h4>@code</h4>
+                <p>World Peace Builder</p>
+            </div>
+            <div class="trending-block">
+                <img src="./images/KOALA 3.png" width="35px">
+                <h4>@code</h4>
+                <p>World Peace Builder</p>
+            </div>
+            <div class="trending-block">
+                <img src="./images/KOALA 3.png" width="35px">
+                <h4>@code</h4>
+                <p>World Peace Builder</p>
+            </div>
         </div>
     </div>
 
