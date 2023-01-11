@@ -1,5 +1,6 @@
-window.addEventListener('mouseover',  highlight);
+const cardOne = document.getElementById('card-one');
+cardOne.addEventListener('click',test);
 
-function highlight(e) {
-    console.log(e);
+function test() {
+    console.log('working')
 }

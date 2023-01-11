@@ -23,7 +23,7 @@ body {
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template: 1fr 15fr / 1fr 4fr 1fr;
+    grid-template: 1fr 15fr / 1fr 5fr 1fr;
 }
 
 .sidebar-container {
@@ -32,6 +32,7 @@ body {
     color: whitesmoke;
     font-size: 22px;
     font-weight: bolder;
+    text-shadow: 1px 5px 3px rgba(0, 0, 0, 0.253)
 }
 
 .topbar-container {
@@ -52,12 +53,14 @@ body {
 
 .header {
     display: flex;
-    gap: 20px;
-    margin: 35px;
-    font-size: 36px;
+    gap: 10px;
+    margin: 20px;
+    margin-left: 10px;
+    font-size: 30px;
     font-weight: bolder;
     fill: white;
     align-items: center;
+    text-shadow: 1px 5px 3px rgba(0, 0, 0, 0.253);
 }
 
 .sidebar-one {
@@ -135,14 +138,17 @@ body {
     display: grid;
     grid-template: 1fr 1fr / 1fr 4fr;
     align-items: center;
-    gap: 0px 10px;
+    gap: 0px 0px;
+    text-shadow: 1px 4px 3px rgba(0, 0, 0, 0.123)
 }
 
 .user-image {
     grid-area: 1 / 1 / 3 / 2;
     margin-left: 15px;
     margin-bottom: 5px;
-    place-self: center;
+    margin-right: 5px;
+    align-self: center;
+    justify-self: end;
 }
 
 .user-greeting h3 {
@@ -175,6 +181,8 @@ body {
     font-size: 18px;
     font-weight: bold;
     border: 0;
+    text-shadow: 1px 5px 3px rgba(0, 0, 0, 0.253);
+    box-shadow: 1px 5px 3px rgba(0, 0, 0, 0.253)
 }
 
 .user-buttons button:hover {
@@ -193,7 +201,8 @@ body {
 
 .projects {
     display: grid;
-    grid-template: 1fr 1fr 1fr / 1fr 1fr;
+    grid-template-columns: repeat(auto-fit,minmax(350px, 1fr));
+    grid-template-rows: repeat(auto-fit,minmax(150px, 1fr));;
     gap: 15px;
     margin: 15px;
 }
@@ -209,8 +218,33 @@ body {
     box-shadow: 1px 3px 3px rgb(121, 121, 121);
 }
 
-.card:hover {
+.card:hover,
+.card-project:hover {
     border: 2px solid var(--second-color);
+}
+
+.card-project {
+    display: grid;
+    grid-template: 1fr 1.5fr 1fr / 1fr;
+    border: 0;
+    border-left: 6px solid var(--third-color);
+    border-radius: 15px;
+    padding: 18px;
+    background-color: var(--fourth-color);
+    gap: 5px;
+    box-shadow: 1px 3px 3px rgb(121, 121, 121);
+}
+
+.card-project h3 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.card-project p {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.card-project .project-buttons {
+    grid-area: 3 / 1 / 4 / 2;
 }
 
 .project-buttons {
@@ -218,6 +252,11 @@ body {
     justify-self: end;
     margin-top: 30px;
     gap: 15px
+}
+
+#project-link {
+    grid-area: 1 / 1 / 3 / -1;
+    z-index: 0;
 }
 
 .rightbar-container {
